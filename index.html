@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Опросник</title>
+
+<link rel="stylesheet" href="./index.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Libre+Baskerville:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
+```
+
+</head>
+
+<body>
+
+```
+<main class="survey">
+
+    <h1>ОПРОСНИК</h1>
+
+    <p class="intro">
+        Ответь на несколько вопросов
+    </p>
+
+    <form id="surveyForm"
+          action="https://formspree.io/f/mqerdoaa"
+          method="POST">
+
+        <!-- ВОПРОС 1 -->
+
+        <div class="question">
+
+            <h2>1) Любимый персонаж</h2>
+
+            <label>
+                <input type="radio" name="character" value="Рави">
+                Рави
+            </label>
+
+            <label>
+                <input type="radio" name="character" value="Коннор">
+                Коннор
+            </label>
+
+            <label>
+                <input type="radio" name="character" value="Пипа">
+                Пипа
+            </label>
+
+            <label>
+                <input type="radio" name="character" value="Другое">
+                Другое
+            </label>
+
+            <div class="other-panel">
+                <input
+                    type="text"
+                    name="character_other"
+                    placeholder="Напиши свой вариант..."
+                    disabled
+                >
+            </div>
+
+        </div>
+
+
+        <!-- ВОПРОС 2 -->
+
+        <div class="question">
+
+            <h2>2) Самая интересная сюжетная линия</h2>
+
+            <label>
+                <input type="radio" name="plot" value="Раскрытие убийцы">
+                Раскрытие убийцы
+            </label>
+
+            <label>
+                <input type="radio" name="plot" value="Суд над Максом">
+                Суд над Максом
+            </label>
+
+            <label>
+                <input type="radio" name="plot" value="Ребенок Браунсвика">
+                Ребенок Браунсвика
+            </label>
+
+            <label>
+                <input type="radio" name="plot" value="Другое">
+                Другое
+            </label>
+
+            <div class="other-panel">
+                <input
+                    type="text"
+                    name="plot_other"
+                    placeholder="Напиши свой вариант..."
+                    disabled
+                >
+            </div>
+
+        </div>
+
+
+        <!-- ВОПРОС 3 -->
+
+        <div class="question">
+
+            <h2>3) Рави или Коннор?</h2>
+
+            <label>
+                <input type="radio" name="raviConnor" value="Рави">
+                Рави
+            </label>
+
+            <label>
+                <input type="radio" name="raviConnor" value="Коннор">
+                Коннор
+            </label>
+
+            <label>
+                <input type="radio" name="raviConnor" value="Оба">
+                Оба
+            </label>
+
+            <label>
+                <input type="radio" name="raviConnor" value="Другое">
+                Другое
+            </label>
+
+            <div class="other-panel">
+                <input
+                    type="text"
+                    name="raviConnor_other"
+                    placeholder="Напиши свой вариант..."
+                    disabled
+                >
+            </div>
+
+        </div>
+
+
+        <!-- ВОПРОС 4 -->
+
+        <div class="question">
+
+            <h2>4) Пипа хорошая?</h2>
+
+            <label>
+                <input type="radio" name="pipa" value="Да">
+                Да
+            </label>
+
+            <label>
+                <input type="radio" name="pipa" value="Нет">
+                Нет
+            </label>
+
+            <label>
+                <input type="radio" name="pipa" value="Сложно сказать">
+                Сложно сказать
+            </label>
+
+            <label>
+                <input type="radio" name="pipa" value="Другое">
+                Другое
+            </label>
+
+            <div class="other-panel">
+                <input
+                    type="text"
+                    name="pipa_other"
+                    placeholder="Напиши свой вариант..."
+                    disabled
+                >
+            </div>
+
+        </div>
+
+
+        <!-- ВОПРОС 5 -->
+
+        <div class="question">
+
+            <h2>5) Чарли должны посадить?</h2>
+
+            <label>
+                <input type="radio" name="charlie" value="Да, самосуд плохо">
+                Да, самосуд плохо
+            </label>
+
+            <label>
+                <input type="radio" name="charlie" value="Нет, герой же">
+                Нет, герой же
+            </label>
+
+            <label>
+                <input type="radio" name="charlie" value="Самосуд плохо, но что ему оставалось">
+                Самосуд плохо, но что ему оставалось?
+            </label>
+
+            <label>
+                <input type="radio" name="charlie" value="Другое">
+                Другое
+            </label>
+
+            <div class="other-panel">
+                <input
+                    type="text"
+                    name="charlie_other"
+                    placeholder="Напиши свой вариант..."
+                    disabled
+                >
+            </div>
+
+        </div>
+
+
+        <!-- ВОПРОС 6 -->
+
+        <div class="question">
+
+            <h2>6) Макс заслужил тюрьмы?</h2>
+
+            <label>
+                <input type="radio" name="max" value="Да">
+                Да
+            </label>
+
+            <label>
+                <input type="radio" name="max" value="Да, но не за убийство">
+                Да, но не за убийство
+            </label>
+
+            <label>
+                <input type="radio" name="max" value="Да, какая разница за что сядет">
+                Да, какая разница за что сядет
+            </label>
+
+            <label>
+                <input type="radio" name="max" value="Нет">
+                Нет
+            </label>
+
+            <label>
+                <input type="radio" name="max" value="Другое">
+                Другое
+            </label>
+
+            <div class="other-panel">
+                <input
+                    type="text"
+                    name="max_other"
+                    placeholder="Напиши свой вариант..."
+                    disabled
+                >
+            </div>
+
+        </div>
+
+
+        <!-- ВОПРОС 7 -->
+
+        <div class="question">
+
+            <h2>7) Норм конец?</h2>
+
+            <label>
+                <input type="radio" name="ending" value="Нет, Пиппа должна была умереть">
+                Нет, Пиппа должна была умереть
+            </label>
+
+            <label>
+                <input type="radio" name="ending" value="Нет, чего-то не хватает">
+                Нет, чего-то не хватает
+            </label>
+
+            <label>
+                <input type="radio" name="ending" value="Да, другой концовки и быть не может">
+                Да, другой концовки и быть не может
+            </label>
+
+            <label>
+                <input type="radio" name="ending" value="Да, но можно было лучше">
+                Да, но можно было лучше
+            </label>
+
+            <label>
+                <input type="radio" name="ending" value="Другое">
+                Другое
+            </label>
+
+            <div class="other-panel">
+                <input
+                    type="text"
+                    name="ending_other"
+                    placeholder="Напиши свой вариант..."
+                    disabled
+                >
+            </div>
+
+        </div>
+
+
+        <!-- ВОПРОС 8 -->
+
+        <div class="question">
+
+            <h2>8) Понравилась книга?</h2>
+
+            <label>
+                <input type="radio" name="book" value="Очень понравилась">
+                Очень понравилась
+            </label>
+
+            <label>
+                <input type="radio" name="book" value="Понравилась">
+                Понравилась
+            </label>
+
+            <label>
+                <input type="radio" name="book" value="Не очень">
+                Не очень
+            </label>
+
+            <label>
+                <input type="radio" name="book" value="Не мое">
+                Не моё
+            </label>
+
+            <label>
+                <input type="radio" name="book" value="Другое">
+                Другое
+            </label>
+
+            <div class="other-panel">
+                <input
+                    type="text"
+                    name="book_other"
+                    placeholder="Напиши свой вариант..."
+                    disabled
+                >
+            </div>
+
+        </div>
+
+
+        <!-- ВОПРОС 9 -->
+
+        <div class="question">
+
+            <h2>9) Какая часть лучше?</h2>
+
+            <label>
+                <input type="radio" name="part" value="Первая">
+                Первая
+            </label>
+
+            <label>
+                <input type="radio" name="part" value="Вторая">
+                Вторая
+            </label>
+
+            <label>
+                <input type="radio" name="part" value="Обе">
+                Обе
+            </label>
+
+            <label>
+                <input type="radio" name="part" value="Третью не читала, но уже знаю что она">
+                Третью не читала, но уже знаю, что она...
+            </label>
+
+            <label>
+                <input type="radio" name="part" value="Другое">
+                Другое
+            </label>
+
+            <div class="other-panel">
+                <input
+                    type="text"
+                    name="part_other"
+                    placeholder="Напиши свой вариант..."
+                    disabled
+                >
+            </div>
+
+        </div>
+
+
+        <!-- ВОПРОС 10 -->
+
+        <div class="final-question">
+
+            <h2>
+                10) Кто будет искать тебя,<br>
+                когда ты исчезнешь?
+            </h2>
+
+            <label class="final-answer">
+
+                <input
+                    type="radio"
+                    name="finalAnswer"
+                    value="НИКТО"
+                    checked
+                    disabled
+                >
+
+                <span>НИКТО</span>
+
+            </label>
+
+        </div>
+
+
+        <button type="submit" id="submitButton" disabled>
+            ОТПРАВИТЬ
+        </button>
+
+    </form>
+
+    <div id="result"></div>
+
+</main>
+
+
+<script>
+
+    const form = document.getElementById("surveyForm");
+    const submitButton = document.getElementById("submitButton");
+    const result = document.getElementById("result");
+
+    /*
+    ===================================
+    ПОЛЯ "ДРУГОЕ"
+    ===================================
+    */
+
+    document.querySelectorAll(".question").forEach(question => {
+
+        const radios = question.querySelectorAll('input[type="radio"]');
+        const otherPanel = question.querySelector(".other-panel");
+        const otherInput = otherPanel.querySelector("input");
+
+        radios.forEach(radio => {
+
+            radio.addEventListener("change", function () {
+
+                if (this.value === "Другое") {
+
+                    otherPanel.classList.add("active");
+
+                    otherInput.disabled = false;
+                    otherInput.required = true;
+
+                    otherInput.focus();
+
+                } else {
+
+                    otherPanel.classList.remove("active");
+
+                    otherInput.value = "";
+                    otherInput.disabled = true;
+                    otherInput.required = false;
+
+                }
+
+            });
+
+        });
+
+    });
+
+
+    /*
+    ===================================
+    ПРОВЕРКА ВСЕХ ОТВЕТОВ
+    ===================================
+    */
+
+    const questions = document.querySelectorAll(".question");
+
+    function checkAnswers() {
+
+        let allAnswered = true;
+
+        questions.forEach(question => {
+
+            const selectedAnswer = question.querySelector(
+                'input[type="radio"]:checked'
+            );
+
+            if (!selectedAnswer) {
+
+                allAnswered = false;
+
+            }
+
+        });
+
+        submitButton.disabled = !allAnswered;
+
+    }
+
+
+    document.querySelectorAll(
+        '.question input[type="radio"]'
+    ).forEach(radio => {
+
+        radio.addEventListener("change", checkAnswers);
+
+    });
+
+
+    /*
+    ===================================
+    ОТПРАВКА ФОРМЫ
+    ===================================
+    */
+
+    form.addEventListener("submit", function () {
+
+        submitButton.disabled = true;
+        submitButton.textContent = "ОТПРАВЛЯЕТСЯ...";
+
+    });
+
+
+    checkAnswers();
+
+</script>
+```
+
+</body>
+
+</html>
